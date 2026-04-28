@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="108" fill="#18120F"/>
+  <circle cx="256" cy="256" r="196" fill="#F8F2E8"/>
+  <circle cx="256" cy="256" r="164" fill="#B91C1C"/>
+  <path d="M164 322C237 322 323 282 354 197C361 179 379 168 398 171C390 270 303 351 201 351C186 351 174 340 164 322Z" fill="#F97316"/>
+  <path d="M144 313C220 302 285 262 331 198C341 184 351 175 365 171C331 271 242 339 142 339C136 328 136 318 144 313Z" fill="#FED7AA"/>
+  <path d="M357 188C373 150 397 124 430 108C422 144 407 167 384 183C375 190 365 193 357 188Z" fill="#166534"/>
+  <path d="M173 378H339" stroke="#F8F2E8" stroke-width="26" stroke-linecap="round"/>
+  <path d="M198 386H314" stroke="#18120F" stroke-width="12" stroke-linecap="round" opacity=".38"/>
+  <text x="256" y="264" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" letter-spacing="0" fill="#FFF7ED">MT</text>
+</svg>

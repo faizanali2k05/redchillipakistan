@@ -35,7 +35,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
+    <footer className="bg-[#18120f] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12">
@@ -46,13 +46,11 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 bg-gradient-spice rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">MT</span>
-              </div>
+              <img src="/logo.svg" alt="Magsi Traders logo" className="w-12 h-12 rounded-lg" />
               <span className="font-bold text-xl">Magsi Traders</span>
             </div>
-            <p className="text-gray-400 text-sm">
-              Premium spices & commodities supplier across Pakistan.
+            <p className="text-stone-300 text-sm leading-6">
+              Premium spices, rice, lentils, tea, and wholesale commodities delivered across Pakistan.
             </p>
           </motion.div>
 
@@ -65,12 +63,12 @@ const Footer = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <h3 className="font-bold text-lg mb-4 text-spice-400">{section.title}</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm">
                 {section.links.map((link, idx) => (
                   <li key={idx}>
                     <Link
                       to={link.path}
-                      className="text-gray-400 hover:text-spice-400 transition-colors duration-200"
+                    className="text-stone-300 hover:text-spice-400 transition-colors duration-200"
                     >
                       {link.label}
                     </Link>
@@ -87,7 +85,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <h3 className="font-bold text-lg mb-4 text-spice-400">Contact</h3>
-            <div className="space-y-3 text-gray-400 text-sm">
+            <div className="space-y-3 text-stone-300 text-sm">
               <a
                 href="tel:+923001234567"
                 className="flex items-center space-x-2 hover:text-spice-400 transition-colors"
@@ -111,7 +109,7 @@ const Footer = () => {
         </div>
 
         {/* Social Links */}
-        <div className="border-t border-gray-700 pt-6 sm:pt-8 mb-6 sm:mb-8">
+        <div className="border-t border-white/10 pt-6 sm:pt-8 mb-6 sm:mb-8">
           <div className="flex justify-center items-center flex-wrap gap-4 sm:gap-6">
             {socialLinks.map((social, index) => {
               const Icon = social.icon
@@ -122,7 +120,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, color: '#c97c37' }}
-                  className="text-gray-400 hover:text-spice-500 transition-colors duration-200"
+                  className="text-stone-300 hover:text-spice-500 transition-colors duration-200"
                   title={social.label}
                 >
                   <Icon size={24} />
@@ -133,7 +131,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-white/10 pt-8 text-center text-stone-400 text-sm">
           <p>&copy; {currentYear} Magsi Traders. All rights reserved.</p>
           <p className="mt-2">Designed & built with care for quality</p>
         </div>

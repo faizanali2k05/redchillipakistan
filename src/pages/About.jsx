@@ -36,19 +36,25 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white pt-24 pb-16">
       {/* Hero Section */}
-      <section className="py-16 sm:py-24 bg-gradient-spice text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 sm:py-24 text-white overflow-hidden">
+        <img
+          src="https://images.pexels.com/photos/2386150/pexels-photo-2386150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="Assorted spices and herbs at a market stall"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#18120f]/78"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+              className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               About Magsi Traders
             </h1>
             <p className="text-xl text-orange-50 max-w-3xl mx-auto">
-              Your trusted partner in premium spices and commodities since inception
+              Built for reliable wholesale spice and commodity supply across Pakistan
             </p>
           </motion.div>
         </div>
@@ -88,11 +94,11 @@ const About = () => {
               className="relative"
             >
               <img
-                src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22400%22%3E%3Crect fill=%22%23c97c37%22 width=%22500%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22 font-weight=%22bold%22%3EMagsi Traders%3C/text%3E%3C/svg%3E"
-                alt="Magsi Traders"
-                className="w-full rounded-xl shadow-spice-lg"
+                src="https://images.pexels.com/photos/17978110/pexels-photo-17978110.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Bags full of spices at a market"
+                className="w-full rounded-lg shadow-spice-lg object-cover aspect-[5/4]"
               />
-              <div className="absolute inset-0 bg-gradient-spice opacity-20 rounded-xl"></div>
+              <div className="absolute inset-0 bg-gradient-spice opacity-10 rounded-lg"></div>
             </motion.div>
           </div>
         </div>
@@ -146,7 +152,7 @@ const About = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-md hover:shadow-spice-lg transition-all duration-300 border border-gray-100"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-spice-lg transition-all duration-300 border border-gray-100"
                 >
                   <div className="w-12 h-12 bg-gradient-spice rounded-lg flex items-center justify-center mb-4">
                     <Icon className="text-white text-2xl" />

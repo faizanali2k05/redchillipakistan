@@ -40,8 +40,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       {/* Header */}
-      <section className="py-16 sm:py-24 bg-gradient-spice text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-16 sm:py-24 text-white overflow-hidden">
+        <img
+          src="https://images.pexels.com/photos/17599037/pexels-photo-17599037.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="Market stall with spices"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[#18120f]/76"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,7 +57,7 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-orange-50">
-              We'd love to hear from you. Reach out to us anytime.
+              Request pricing, delivery details, or product availability.
             </p>
           </motion.div>
         </div>
@@ -72,7 +78,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ y: -5, transition: { duration: 0.3 } }}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-spice-lg transition-all duration-300 border border-gray-100 group"
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-spice-lg transition-all duration-300 border border-gray-100 group"
               >
                 <div className="w-12 h-12 bg-gradient-spice rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="text-white text-2xl" />
@@ -97,7 +103,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-8 rounded-xl shadow-md"
+            className="bg-white p-8 rounded-lg shadow-md"
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Send us a Message
@@ -113,7 +119,7 @@ const Contact = () => {
             className="space-y-8"
           >
             {/* Business Hours */}
-            <div className="bg-white p-8 rounded-xl shadow-md">
+            <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-spice rounded-lg flex items-center justify-center">
                   <FaClock className="text-white text-2xl" />
@@ -132,22 +138,30 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-white p-8 rounded-xl shadow-md overflow-hidden">
+            {/* Location */}
+            <div className="bg-white p-8 rounded-lg shadow-md overflow-hidden">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Our Location
               </h3>
-              <div className="w-full h-64 bg-gradient-spice rounded-lg overflow-hidden flex items-center justify-center text-white">
-                <div className="text-center p-4">
-                  <p className="text-3xl mb-2">📍</p>
-                  <p className="text-2xl font-bold mb-2">Karachi, Pakistan</p>
-                  <p className="text-orange-100">Serving nationwide with fast delivery</p>
+              <div className="relative w-full h-64 rounded-lg overflow-hidden text-white">
+                <img
+                  src="https://images.unsplash.com/photo-1759064716219-ba8c60a7ce07?auto=format&fit=crop&fm=jpg&q=80&w=1000"
+                  alt="Market spices served from Karachi to Pakistan"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#18120f]/70"></div>
+                <div className="relative h-full flex items-center justify-center text-center p-4">
+                  <div>
+                    <FaMapMarkerAlt className="text-3xl mb-3 mx-auto text-orange-200" />
+                    <p className="text-2xl font-bold mb-2">Karachi, Pakistan</p>
+                    <p className="text-orange-100">Serving nationwide with fast delivery</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Quick Contact */}
-            <div className="bg-gradient-spice p-8 rounded-xl text-white">
+            <div className="bg-[#18120f] p-8 rounded-lg text-white">
               <h3 className="text-2xl font-bold mb-4">Quick Contact</h3>
               <p className="text-orange-50 mb-6">
                 Need immediate assistance? Call or chat with us now.
@@ -219,7 +233,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-spice-500 transition-colors"
+                className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-spice-500 transition-colors"
               >
                 <h3 className="text-lg font-bold text-gray-900 mb-3">
                   {faq.question}

@@ -1,0 +1,8 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#18120F"/>
+  <circle cx="32" cy="32" r="24" fill="#F8F2E8"/>
+  <circle cx="32" cy="32" r="19" fill="#B91C1C"/>
+  <path d="M20 40C29 40 39 35 43 25C44 23 46 21 49 21C48 33 37 44 24 44C22 44 21 42 20 40Z" fill="#F97316"/>
+  <path d="M45 24C47 19 50 16 54 14C53 18 51 21 48 23C47 24 46 24 45 24Z" fill="#166534"/>
+  <text x="32" y="35" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" fill="#FFF7ED">MT</text>
+</svg>
